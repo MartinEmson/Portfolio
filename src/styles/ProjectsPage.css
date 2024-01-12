@@ -1,0 +1,38 @@
+/* ProjectsPage.css */
+.projects-page {
+    padding: 40px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .project {
+    width: 300px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .project p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .project a {
+    color: #0275d8;
+    text-decoration: none;
+    font-weight: bold;
+  }
