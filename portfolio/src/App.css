@@ -1,5 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -14,14 +24,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
@@ -34,5 +44,20 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/* NavBar.css */
+.navbar {
+  background-color: var(--navbar-bg-color);
+  color: var(--text-color);
+}
+
+/* Media query for dark mode */
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background-color: var(--dark-navbar-bg-color);
+    color: var(--dark-text-color);
   }
 }

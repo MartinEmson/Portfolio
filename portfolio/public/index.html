@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,301,400&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -25,6 +26,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+      } else {
+          document.documentElement.classList.remove('dark')
+      }
+  </script>
+  
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +49,34 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+      function smoothScroll(target, duration) {
+  var targetElement = document.querySelector(target);
+  var targetPosition = targetElement.getBoundingClientRect().top;
+  var startPosition = window.pageYOffset;
+  var distance = targetPosition - startPosition;
+  var startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    var timeElapsed = currentTime - startTime;
+    var scrollAmount = Math.round(ease(timeElapsed, startPosition, distance, duration));
+    window.scrollTo(0, scrollAmount);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+    </script>
+
   </body>
 </html>
