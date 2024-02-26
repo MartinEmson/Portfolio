@@ -10,6 +10,7 @@ import Footer from './components/ui/Footer.jsx';
 
 
 function App() {
+  
   useEffect(() => {
     const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
     const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');

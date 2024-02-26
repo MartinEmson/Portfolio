@@ -1,11 +1,14 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import { init } from '../../canvas.js';
 
 function Hero() {
-      
+    useEffect(() => {
+        init(); // Call the init function when the component mounts
+    }, []);
 
   return (
     <div className="bg-white text-black py-10 px-10 relative h-screen w-full rounded-tl-lg rounded-tr-3xl ">
+      {/* <canvas id="c" class="absolute inset-0 w-4/5 h-3/5 m-auto z-10"></canvas> */}
      <nav className="navbar">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -45,7 +48,6 @@ function Hero() {
         </div>
       </div>
     </nav>
-    
   </div>
   
   );
