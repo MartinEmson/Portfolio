@@ -6,6 +6,8 @@ import NavBar from './components/ui/NavBar.jsx';
 import About from './components/homepage/About.jsx';
 import Projects from './components/homepage/Projects.jsx';
 import Footer from './components/ui/Footer.jsx';
+import { gsap } from "gsap";
+import * as THREE from 'three';
 
 
 
@@ -71,7 +73,7 @@ function App() {
   }, []); // Empty dependency array to run this effect only once on mount
   
   return (
-    <div className="App pt-5 px-5 pb-5 bg-indigo-300">
+    <div className="App">
     {/* <NavBar /> */}
       <Hero />
       <About />
