@@ -17,9 +17,9 @@ function Footer() {
       </div>
       <div className="flex order-1 md:order-2 mb-4 md:mb-0">
         <ul className='flex flex-row'>
-          <li className="mr-4 text-xl"><a href="https://www.instagram.com/martinlindevall/" target="_blank" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a></li>
-          <li className="mr-4 text-xl"><a href="https://www.linkedin.com/in/martin-lindevall-65750a238/" target="_blank" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon="fa-brands fa-linkedin" /></a></li>
-          <li className='text-xl'><a href="https://github.com/MartinEmson" target="_blank" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon="fa-brands fa-github" /></a></li>
+          <li className="mr-4 text-2xl"><a href="https://www.instagram.com/martinlindevall/" target="_blank" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a></li>
+          <li className="mr-4 text-2xl"><a href="https://www.linkedin.com/in/martin-lindevall-65750a238/" target="_blank" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon="fa-brands fa-linkedin" /></a></li>
+          <li className='text-2xl'><a href="https://github.com/MartinEmson" target="_blank" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon="fa-brands fa-github" /></a></li>
         </ul>
       </div>
     </div>

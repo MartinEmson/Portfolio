@@ -6,7 +6,7 @@ import race from '../../assets/race.png';
 
 function Projects() {
   return (
-    <section id="projects" className="py-16 bg-gray-100">
+    <section id="projects" className="py-16 bg-customWhite">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8">My Projects</h2>
 
